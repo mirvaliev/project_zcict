@@ -1,11 +1,14 @@
-import { LoginLogo } from '../LoginLogo/LoginLogo';
+import { Route, Routes } from 'react-router-dom';
+import { Layout } from '../../layout/Layout/Layout';
 
 import './App.scss';
 
 const App: React.FC = () => {
   return (
     <>
-      <LoginLogo />
+      <Routes>
+        <Route path='/' element={<Layout />}></Route>
+      </Routes>
     </>
   );
 };
